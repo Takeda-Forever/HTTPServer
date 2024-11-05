@@ -1,3 +1,27 @@
+// ----------------------------------------------------------------
+// Copyright (c) 2024 Takeda-Forever
+// All rights reserved.
+// Http request responeser is free software: you can 
+// redistribute it and/or modify it for need.
+// ----------------------------------------------------------------
+
+/*
+
+How it works:
+ - This code uses boost.asio library to establish a TCP connection to a server.
+ - The server's IP address and port are provided as command line arguments.
+ - The client sends a HTTP GET request to the server.
+ - The server responds with the HTTP headers and body.
+ - The client prints out the response.
+
+Compile and run the code:
+ g++ -o http_server main.cpp -lboost_asio
+ or 
+ cl main.cpp /EHsc /I /path/to/boost-library
+*/
+
+
+
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
 #include <iostream>
