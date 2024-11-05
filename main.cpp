@@ -15,7 +15,7 @@ How it works:
  - The client prints out the response.
 
 Compile and run the code:
- g++ -o http_server main.cpp -lboost_asio
+ g++ -o http_server main.cpp -lboost_asio -lpthread
  or 
  cl main.cpp /EHsc /I /path/to/boost-library
 */
