@@ -1,3 +1,5 @@
 .obj
 .html
 .css
+/build
+/.vscode
