@@ -12,7 +12,7 @@ public:
     std::string handle_request(const std::string&) const;
 
 private:
-    std::unordered_map<std::string, HandlerFunc> routes_;
+    std::unordered_map<std::string, HandlerFunc> routes;
 };
 
 // Interface for making HTTP requests

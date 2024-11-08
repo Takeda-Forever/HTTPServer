@@ -1,4 +1,5 @@
 #include "function.h"
+
 namespace WebCore {
 void Server::run(std::shared_ptr<Router> router)
 {
@@ -79,15 +80,15 @@ void Session::start() {
 
 std::string Router::handle_request(const std::string& path) const
 {
-    if (routes_.count(path)) {
-        return routes_.at(path)();
+    if (routes.count(path)) {
+        return routes.at(path)();
     }
     return "";  // Пустая строка для несуществующих маршрутов
 }
 
 void Router::add_route(const std::string& path, HandlerFunc handler) 
 {
-        routes_[path] = handler;
+        routes[path] = handler;
 }
 
 
