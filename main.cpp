@@ -18,6 +18,8 @@ Compile and run the code:
  g++ -o http_server main.cpp -lboost_asio -lptread
  or 
  cl main.cpp /EHsc /I /path/to/boost-library
+ or
+ cmake -b /path/to/CMakeLists.txt -o /path/to/build
 */
 
 
