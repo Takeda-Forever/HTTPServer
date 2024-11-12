@@ -23,9 +23,9 @@ Compile and run the code:
 
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
-#include "function.h"
-#include "lib.h"
-#include "pch.h"
+#include "function.hpp"
+#include "lib.hpp"
+#include "pch.hpp"
 
 int main(int argc, char** argv) {
 std::cin.tie(NULL); 
